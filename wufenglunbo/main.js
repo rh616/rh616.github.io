@@ -8,35 +8,9 @@ setInterval(()=>{
   makeCurrent(getImage(n+1))
   n += 1
 },3000)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 下面可以不看
-
 function getImage(n){
   return $(`.images > img:nth-child(${x(n)})`)
 }
-
 function x(n){
   if(n>3){
     n = n%3
@@ -46,7 +20,6 @@ function x(n){
   } // n = 1 2 3
   return n
 }
-
 function 初始化(){
   n = 1
   $(`.images > img:nth-child(${n})`).addClass('current')
